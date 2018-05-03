@@ -12,13 +12,12 @@ export default class Leaves extends React.Component {
 
 handleClick() {
   this.setState({visible: false})
-  console.log('hide')
 }
 
 render() {
   return(
     <div>
-      <img className={this.state.visible ? 'show' : 'hide'} onClick={() => this.handleClick()} src="../../images/leaf.png" />
+      <img className={this.state.visible ? 'leaf' : 'leaf disappear'} onClick={() => this.handleClick()} src="../../images/leaf.png" />
     </div>
 
 )
