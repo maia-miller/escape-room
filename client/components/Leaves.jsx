@@ -4,7 +4,6 @@ export default class Leaves extends React.Component {
   constructor(props) {
     super (props)
     this.state = {
-      //state
       visible: true
     }
     this.handleClick = this.handleClick.bind(this)
