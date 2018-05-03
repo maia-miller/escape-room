@@ -7,11 +7,12 @@ export default class Leaves extends React.Component {
       //state
       visible: true
     }
-    this.handleClick = this.handleClick.bind
+    this.handleClick = this.handleClick.bind(this)
   }
 
 handleClick() {
   this.setState({visible: false})
+  console.log('hide')
 }
 
 render() {
