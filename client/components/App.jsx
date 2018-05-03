@@ -1,8 +1,10 @@
 import React from 'react'
 
+import Columns from './Columns'
+
 const App = () => (
-    <div className='app-container'>
-      <h1>Hello World</h1>
+    <div className='app-container app-body'>
+      <Columns />
     </div>
 )
 
