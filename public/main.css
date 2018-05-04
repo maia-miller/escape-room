@@ -7,3 +7,11 @@
 .leaf {
   width: 100px;
 }
+
+.smalltablet {
+  width: 100px;
+}
+
+.toToolkit {
+  display: none;
+}
