@@ -30,9 +30,9 @@ handleClick() {
 
 const mapStateToProps = (state) => {
   console.log('state', state)
-  return(
+  return {
     leaves: state.leaves
-  )
+  }
 }
 
 export default connect(mapStateToProps)(Leaves)

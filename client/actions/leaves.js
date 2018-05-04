@@ -1,8 +1,8 @@
 function hideLeaves(){
-  return(
-    type: HIDE_LEAVES,
+  return{
+    type: 'HIDE_LEAVES',
     leaves: false
-  )
+  }
 }
 
 export function disappearLeaves() {
