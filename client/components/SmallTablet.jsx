@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import {collectSmallTablet} from '../actions/smalltablet.js'
+import {toggleLargeTablet} from '../actions/largetablet.js'
 
 import LargeTablet from './LargeTablet.jsx'
 
@@ -16,6 +17,7 @@ class SmallTablet extends React.Component {
 
 handleClick() {
   this.props.dispatch(collectSmallTablet())
+  this.props.dispatch(toggleLargeTablet())
 }
 
   render() {
@@ -23,7 +25,7 @@ handleClick() {
       <div>
         <img className={this.props.leaves && this.props.smalltabletfound ? 'smalltablet toToolkit' : 'smalltablet'} onClick={() => this.handleClick()} src="../../images/smalltablet.png" />
 
-        {this.props.leaves && this.props.smalltabletfound && <LargeTablet />}
+        {/* {this.props.leaves && this.props.smalltabletfound && <LargeTablet />} */}
       </div>
 
     )
