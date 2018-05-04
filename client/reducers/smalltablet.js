@@ -1,11 +1,11 @@
 let initialState = {
-  leaves: true
+  smalltabletfound: false
 }
 
 export default function (state=initialState, action) {
   switch (action.type) {
-    case 'HIDE_LEAVES':
-      return action.leaves
+    case 'SMALL_TABLET_COLLECTED':
+      return action.smalltabletfound
 
     default:
       return state
