@@ -1,8 +1,10 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 import {disappearLeaves} from '../actions/leaves.js'
 
-export default class Leaves extends React.Component {
+
+class Leaves extends React.Component {
   constructor(props) {
     super (props)
     this.state = {
@@ -27,7 +29,10 @@ handleClick() {
 }
 
 const mapStateToProps = (state) => {
+  console.log('state', state)
   return(
     leaves: state.leaves
   )
 }
+
+export default connect(mapStateToProps)(Leaves)
