@@ -22,7 +22,7 @@ render() {
       <Leaves />
       <SmallTablet />
 
-      {this.props.leaves && this.props.smalltabletfound && <LargeTablet />}
+      {this.props.leaves && this.props.smalltabletfound && this.props.largetablet && <LargeTablet />}
 
     </div>
 
@@ -34,7 +34,8 @@ const mapStateToProps = (state) => {
   console.log('state', state)
   return {
     leaves: state.leaves,
-    smalltabletfound: state.smalltabletfound
+    smalltabletfound: state.smalltabletfound,
+    largetablet: state.largetablet
   }
 }
 
