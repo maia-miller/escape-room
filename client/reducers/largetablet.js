@@ -4,12 +4,12 @@ function toggleVisible (state) {
   return newState;
 }
 
-let initialState= false
+let initialState = false
 
 export default function(state=initialState, action) {
   switch(action.type) {
     case 'TOGGLE_LARGE_TABLET':
-      return toggleVisible(state)
+      return !state
 
     default:
       return state
