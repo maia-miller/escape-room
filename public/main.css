@@ -6,10 +6,13 @@
 
 .leaf {
   width: 100px;
+  z-index: 1000;
+  position: fixed;
 }
 
 .smalltablet {
   width: 100px;
+  position: fixed;
 }
 
 .toToolkit {

@@ -22,7 +22,7 @@ handleClick() {
 
   render() {
     return(
-      <div>
+      <div className='smalltablet'>
         <img className={this.props.leaves && this.props.smalltabletfound ? 'smalltablet toToolkit' : 'smalltablet'} onClick={() => this.handleClick()} src="../../images/smalltablet.png" />
 
       </div>
