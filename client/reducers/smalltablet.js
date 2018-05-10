@@ -1,11 +1,9 @@
-let initialState = {
-  smalltabletfound: false
-}
+let initialState = false
 
-export default function (state='', action) {
+export default function (state=initialState, action) {
   switch (action.type) {
     case 'SMALL_TABLET_COLLECTED':
-      return action.smalltabletfound
+      return true
 
     default:
       return state

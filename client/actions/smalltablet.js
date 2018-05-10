@@ -1,7 +1,6 @@
 function collectTablet() {
   return{
     type: 'SMALL_TABLET_COLLECTED',
-    smalltabletfound: true
   }
 }
 

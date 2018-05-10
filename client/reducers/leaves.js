@@ -1,11 +1,9 @@
-let initialState = {
-  leaves: false
-}
+let initialState = false
 
-export default function (state='', action) {
+export default function (state=initialState, action) {
   switch (action.type) {
     case 'HIDE_LEAVES':
-      return action.leaves
+      return true
 
     default:
       return state

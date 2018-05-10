@@ -25,7 +25,6 @@ handleClick() {
       <div>
         <img className={this.props.leaves && this.props.smalltabletfound ? 'smalltablet toToolkit' : 'smalltablet'} onClick={() => this.handleClick()} src="../../images/smalltablet.png" />
 
-        {/* {this.props.leaves && this.props.smalltabletfound && <LargeTablet />} */}
       </div>
 
     )
