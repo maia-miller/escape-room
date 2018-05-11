@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import Leaves from './Leaves.jsx'
 import SmallTablet from './SmallTablet.jsx'
 import LargeTablet from './LargeTablet.jsx'
-import Xmodal from './Xmodal.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -19,12 +18,11 @@ render() {
   return(
 
       <div className='app-container'>
-        <Xmodal />
-        {this.props.leaves && this.props.smalltabletfound && this.props.largetablet && <LargeTablet />}
       <h1>Hello World</h1>
       <Leaves />
       <SmallTablet />
 
+      {this.props.leaves && this.props.smalltabletfound && this.props.largetablet && <LargeTablet />}
 
     </div>
 

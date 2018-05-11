@@ -5,14 +5,18 @@
 
 
 .leaf {
-  width: 100px;
+  width: 150px;
   z-index: 1000;
   position: fixed;
+  bottom: 10%;
+  left: 10%;
 }
 
 .smalltablet {
   width: 100px;
   position: fixed;
+  bottom: 10%;
+  left: 10%;
 }
 
 .toToolkit {
