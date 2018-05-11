@@ -9,19 +9,22 @@ const customStyles = {
     right                 : 'auto',
     bottom                : 'auto',
     marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+    transform             : 'translate(-50%, -50%)',
+    overflow              : 'scroll',
+    height                : '70%',
+    background            : 'beige',
+    border                : '2px solid black'
   }
 };
 
 Modal.setAppElement('#app');
 
-export default class App extends React.Component {
+class ComponentName extends React.Component {
   constructor(props) {
     super (props)
     this.state = {
       modalIsOpen: false
     };
-
     this.openModal = this.openModal.bind(this);
     this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
@@ -37,35 +40,22 @@ export default class App extends React.Component {
   }
 
   closeModal() {
-    this.setState({modalIsOpen: false});
+    this.props.dispatch(toggleLargeTablet())
   }
 
   render() {
     return (
-      <div>
-        <button onClick={this.openModal}>Open Modal</button>
+      <div className='modal'>
         <Modal
-          isOpen={this.state.modalIsOpen}
-          onAfterOpen={this.afterOpenModal}
+          isOpen={this.props.largetablet}
           onRequestClose={this.closeModal}
           style={customStyles}
-          contentLabel="Example Modal"
+          contentLabel="Large Tablet"
         >
+          <img className='modal-img' src='../../images/largetablet.png'/>
 
-          <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
-          <button onClick={this.closeModal}>close</button>
-          <div>I am a modal</div>
-          <form>
-            <input />
-            <button>tab navigation</button>
-            <button>stays</button>
-            <button>inside</button>
-            <button>the modal</button>
-          </form>
         </Modal>
       </div>
     );
   }
 }
-
-// ReactDOM.render(<App />, appElement);

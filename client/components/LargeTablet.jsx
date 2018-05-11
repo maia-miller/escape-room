@@ -15,7 +15,8 @@ const customStyles = {
     transform             : 'translate(-50%, -50%)',
     overflow              : 'scroll',
     height                : '70%',
-    background            : 'beige'
+    background            : 'beige',
+    border                : '2px solid black'
   }
 };
 
@@ -25,20 +26,13 @@ class LargeTablet extends React.Component {
   constructor(props) {
     super (props)
     this.state = {
-      modalIsOpen: false
     };
     this.openModal = this.openModal.bind(this);
-    this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
 
   openModal() {
     this.setState({modalIsOpen: true});
-  }
-
-  afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    this.subtitle.style.color = '#f00';
   }
 
   closeModal() {
@@ -54,7 +48,7 @@ class LargeTablet extends React.Component {
           style={customStyles}
           contentLabel="Large Tablet"
         >
-          <img src='../../images/largetablet.png' />
+          <img className='modal-img' src='../../images/largetablet.png'/>
 
         </Modal>
       </div>

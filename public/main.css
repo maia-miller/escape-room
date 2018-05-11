@@ -22,3 +22,7 @@
 .modal {
   overflow: scroll;
 }
+
+.modal-img {
+  height: 90%;
+}

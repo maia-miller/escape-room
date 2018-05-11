@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import Leaves from './Leaves.jsx'
 import SmallTablet from './SmallTablet.jsx'
 import LargeTablet from './LargeTablet.jsx'
-import Modal from './Modal.jsx'
+import Xmodal from './Xmodal.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ render() {
 
       <div className='app-container'>
       <h1>Hello World</h1>
-      <Modal />
+      <Xmodal />
       <Leaves />
       <SmallTablet />
 
