@@ -1,0 +1,9 @@
+.disappear {
+  transition-duration: 7s;
+  transform: translate(-600px, -1000px);
+}
+
+
+.leaf {
+  width: 100px;
+}
