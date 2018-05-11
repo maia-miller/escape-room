@@ -19,8 +19,7 @@ render() {
   return(
 
       <div className='app-container'>
-        <Xmodal />
-        {this.props.leaves && this.props.smalltabletfound && this.props.largetablet && <LargeTablet />}
+      {this.props.leaves && this.props.smalltabletfound && this.props.largetablet && <LargeTablet />}
       <h1>Hello World</h1>
       <Leaves />
       <SmallTablet />
