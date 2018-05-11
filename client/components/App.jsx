@@ -19,12 +19,12 @@ render() {
   return(
 
       <div className='app-container'>
+        <Xmodal />
+        {this.props.leaves && this.props.smalltabletfound && this.props.largetablet && <LargeTablet />}
       <h1>Hello World</h1>
-      <Xmodal />
       <Leaves />
       <SmallTablet />
 
-      {this.props.leaves && this.props.smalltabletfound && this.props.largetablet && <LargeTablet />}
 
     </div>
 

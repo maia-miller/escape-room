@@ -20,6 +20,22 @@ const customStyles = {
   }
 };
 
+const modalStyle = {
+        animationTime: 400,
+        modalHeader: {
+          backgroundColor: 'green'
+        },
+        modalTitle: {
+          color: 'white'
+        },
+        closeButtonText: {
+          color: 'white'
+        },
+        hoveredButtonText: {
+          fontWeight: 'bold'
+        }
+      };
+
 Modal.setAppElement('#app');
 
 class LargeTablet extends React.Component {
@@ -57,7 +73,6 @@ class LargeTablet extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log('state', state)
   return {
     leaves: state.leaves,
     smalltabletfound: state.smalltabletfound,
