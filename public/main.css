@@ -18,3 +18,7 @@
 .toToolkit {
   /* display: none; */
 }
+
+.modal {
+  overflow: scroll;
+}
