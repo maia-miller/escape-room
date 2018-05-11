@@ -19,9 +19,15 @@
   left: 10%;
 }
 
-.toToolkit {
-  /* display: none; */
+.move {
+  transition-duration: 4s;
+  transform: translate(90%, 90%);
 }
+
+/* .move.toToolkit {
+  transition-delay: 10s;
+  display: none;
+  } */
 
 .modal-x {
   padding: 10px;
