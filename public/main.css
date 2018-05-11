@@ -6,4 +6,32 @@
 
 .leaf {
   width: 100px;
+  z-index: 1000;
+  position: fixed;
+}
+
+.smalltablet {
+  width: 100px;
+  position: fixed;
+}
+
+.toToolkit {
+  /* display: none; */
+}
+
+.modal-x {
+  padding: 10px;
+  background-color: white;
+  border-color: black;
+  border-width: 1.5px;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-radius: 100px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.modal-img {
+  height: 90%;
 }

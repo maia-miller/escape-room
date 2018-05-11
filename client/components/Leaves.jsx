@@ -20,8 +20,8 @@ handleClick() {
 
   render() {
     return(
-      <div>
-        <img className={this.props.leaves ? 'leaf' : 'leaf disappear'} onClick={() => this.handleClick()} src="../../images/leaf.png" />
+      <div className='leaf'>
+        <img className={this.props.leaves ? 'leaf disappear' : 'leaf'} onClick={() => this.handleClick()} src="../../images/leaf.png" />
       </div>
 
     )

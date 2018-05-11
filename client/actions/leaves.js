@@ -1,7 +1,6 @@
 function hideLeaves(){
   return{
     type: 'HIDE_LEAVES',
-    leaves: false
   }
 }
 
