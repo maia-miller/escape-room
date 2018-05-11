@@ -13,28 +13,11 @@ const customStyles = {
     bottom                : 'auto',
     marginRight           : '-50%',
     transform             : 'translate(-50%, -50%)',
-    overflow              : 'scroll',
     height                : '70%',
     background            : 'beige',
     border                : '2px solid black'
   }
 };
-
-const modalStyle = {
-        animationTime: 400,
-        modalHeader: {
-          backgroundColor: 'green'
-        },
-        modalTitle: {
-          color: 'white'
-        },
-        closeButtonText: {
-          color: 'white'
-        },
-        hoveredButtonText: {
-          fontWeight: 'bold'
-        }
-      };
 
 Modal.setAppElement('#app');
 
@@ -43,12 +26,7 @@ class LargeTablet extends React.Component {
     super (props)
     this.state = {
     };
-    this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
-  }
-
-  openModal() {
-    this.setState({modalIsOpen: true});
   }
 
   closeModal() {
@@ -58,12 +36,16 @@ class LargeTablet extends React.Component {
   render() {
     return (
       <div className='modal'>
+
         <Modal
           isOpen={this.props.largetablet}
           onRequestClose={this.closeModal}
           style={customStyles}
           contentLabel="Large Tablet"
         >
+
+          <button className='modal-x' onClick={this.closeModal}> X </button>
+          <br />
           <img className='modal-img' src='../../images/largetablet.png'/>
 
         </Modal>
