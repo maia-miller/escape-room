@@ -1,6 +1,6 @@
 .disappear {
-  transition-duration: 7s;
-  transform: translate(-600px, -1000px);
+  transition-duration: 4s;
+  transform: translate(-600px, -300px);
 }
 
 
