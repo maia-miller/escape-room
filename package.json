@@ -41,6 +41,7 @@
     "jsx-loader": "^0.13.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-modal": "^3.4.4",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
     "react-test-renderer": "^15.5.4",
