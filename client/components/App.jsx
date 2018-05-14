@@ -1,13 +1,42 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-import Columns from './Columns'
-import Sidebar from './Sidebar'
+import Leaves from './Leaves.jsx'
+import SmallTablet from './SmallTablet.jsx'
+import LargeTablet from './LargeTablet.jsx'
 
-const App = () => (
-    <div className='app-container app-body'>
-      <Columns />
-      <Sidebar />
+class App extends React.Component {
+  constructor(props) {
+    super (props)
+    this.state = {
+    }
+    //bind
+  }
+//function
+
+render() {
+  return(
+
+      <div className='app-container'>
+      <h1>Hello World</h1>
+      <Leaves />
+      <SmallTablet />
+
+      {this.props.leaves && this.props.smalltabletfound && this.props.largetablet && <LargeTablet />}
+
     </div>
-)
 
-export default App
+        )
+      }
+    }
+
+const mapStateToProps = (state) => {
+  console.log('state', state)
+  return {
+    leaves: state.leaves,
+    smalltabletfound: state.smalltabletfound,
+    largetablet: state.largetablet
+  }
+}
+
+export default connect(mapStateToProps)(App)

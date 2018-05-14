@@ -1,8 +1,11 @@
 import {combineReducers} from 'redux'
 
-import columns from './columns'
+import leaves from './leaves'
+import smalltabletfound from './smalltablet'
+import largetablet from './largetablet'
 
 export default combineReducers({
-  columns,
-  sidebar
+  leaves,
+  smalltabletfound,
+  largetablet
 })
