@@ -1,6 +1,10 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
+import Leaves from './Leaves.jsx'
+import SmallTablet from './SmallTablet.jsx'
+import LargeTablet from './LargeTablet.jsx'
+
 class Columns extends React.Component {
   constructor(props) {
     super(props)
@@ -33,7 +37,8 @@ class Columns extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="app-body">
+
         <div onClick={this.clickColumn} className={`game-column ${this.state.success == true ? "success" : ""}`} id="one"></div>
         <div onClick={this.clickColumn} className={`game-column ${this.state.success == true ? "success" : ""}`} id="two"></div>
         <div onClick={this.clickColumn} className={`game-column ${this.state.success == true ? "success" : ""}`} id="three"></div>
@@ -42,9 +47,20 @@ class Columns extends React.Component {
         <div onClick={this.clickColumn} className="game-column" id="six"></div>
         <div onClick={this.clickColumn} className="game-column" id="seven"></div>
         <div onClick={this.clickColumn} className="game-column" id="eight"></div>
+
+
+          {this.props.leaves && this.props.smalltabletfound && this.props.largetablet && <LargeTablet />}
       </div>
     )
   }
 }
 
-export default connect()(Columns)
+const mapStateToProps = (state) => {
+  return {
+    leaves: state.leaves,
+    smalltabletfound: state.smalltabletfound,
+    largetablet: state.largetablet
+  }
+}
+
+export default connect(mapStateToProps)(Columns)
