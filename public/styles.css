@@ -1,0 +1,56 @@
+.game-column {
+  width: 55px;
+  height: 304px;
+  margin-left: 10px;
+  float: left;
+}
+
+.app-body {
+  height: 750px;
+  background-image: url("./images/parthenon.jpg");
+  background-repeat: no-repeat;
+}
+
+#one {
+  margin-top: 364px;
+  margin-left: 130px;
+}
+
+#two {
+  margin-top: 361px;
+  margin-left: 50px;
+}
+
+#three {
+  margin-top: 360px;
+  margin-left: 76px;
+}
+
+#four {
+  margin-top: 357px;
+  margin-left: 68px;
+}
+
+#five {
+  margin-top: 360px;
+  margin-left: 69px;
+}
+
+#six {
+  margin-top: 357px;
+  margin-left: 72px;
+}
+
+#seven {
+  margin-top: 357px;
+  margin-left: 72px;
+}
+
+#eight {
+  margin-top: 359px;
+  margin-left: 47px;
+}
+
+.success {
+  border: 2px solid white;
+}
