@@ -4,6 +4,7 @@
 }
 
 
+
 .leaf {
   width: 150px;
   z-index: 1000;
@@ -17,11 +18,25 @@
   position: fixed;
   bottom: 10%;
   left: 10%;
+  display: block;
+}
+
+.move {
+  transition-duration: 4s;
+  bottom: 80%;
+  left: 85%;
 }
 
 .toToolkit {
-  /* display: none; */
+  transition-delay: 10s;
+  /* bottom: 20%;
+  left: 50%; */
 }
+
+/* .move.toToolkit {
+  transition-delay: 10s;
+  display: none;
+  } */
 
 .modal-x {
   padding: 10px;
