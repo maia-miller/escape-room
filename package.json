@@ -43,14 +43,16 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-modal": "^3.4.4",
+    "react-motion": "^0.5.2",
+    "react-motions": "^0.3.0",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
     "react-test-renderer": "^15.5.4",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "superagent": "^2.2.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
+    "superagent": "^2.2.0",
     "webpack": "^2.3.3"
   }
 }
