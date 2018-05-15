@@ -1,16 +1,52 @@
-.disappear {
-  transition-duration: 4s;
-  transform: translate(-600px, -300px);
+/* START SCREEN */
+body, html {
+    height: 100%;
+    margin: 0;
 }
 
+.bg {
+  background-image: url('/images/map.png');
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.ping {
+  width: 50px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  animation-name: 'ping'
+}
 
+@keyframes .ping {
+ 0%, 20%, 60%, 100% {
+   -webkit-transform: translateY(0);
+   transform: translateY(0);
+ }
+ 40% {
+   -webkit-transform: translateY(-20px);
+   transform: translateY(-20px);
+ }
+ 80% {
+   -webkit-transform: translateY(-10px);
+   transform: translateY(-10px);
+ }
+}
+
+/* LEVEL ONE FUNCTIONALITY */
 .leaf {
   width: 150px;
   z-index: 1000;
   position: fixed;
   bottom: 10%;
   left: 10%;
+}
+
+.disappear {
+  transition-duration: 4s;
+  transform: translate(-600px, -300px);
 }
 
 .smalltablet {
