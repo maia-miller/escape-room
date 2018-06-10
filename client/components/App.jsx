@@ -1,11 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import {HashRouter as Router, Route} from 'react-router-dom'
-import {Link} from 'react-router-dom'
-import { Pulse } from 'react-motions'
 
-import LevelOne from './LevelOne'
 import Homescreen from './Homescreen'
+import LevelOne from './LevelOne'
 
 export default class App extends React.Component {
   constructor(props) {

@@ -23,8 +23,6 @@ render() {
           <source src="../../images/bensound-theduel.mp3" />
         </audio>
 
-        <Route exact path='/LevelOne' component={LevelOne} />
-
         <Pulse duration={4} infinite>
           <div className='ping'>
             <Link to='/LevelOne'>
