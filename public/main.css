@@ -4,12 +4,13 @@ body, html {
 }
 
 .credit {
-  position: relative;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
   z-index: 1000;
-  float: right;
   background-color: #ddd;
   font-family: sans-serif;
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 5px;
 }
