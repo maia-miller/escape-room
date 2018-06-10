@@ -58,10 +58,18 @@ body, html {
   left: 1000px;
 }
 
+/* TOOLBAR */
+.toolbar {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  height: 550px;
+}
+
 /* LEVEL ONE FUNCTIONALITY */
 .leaf {
   width: 150px;
-  z-index: 1000;
+  z-index: 20;
   position: fixed;
   bottom: 10%;
   left: 10%;
@@ -78,6 +86,7 @@ body, html {
   bottom: 10%;
   left: 10%;
   display: block;
+  z-index: 10;
 }
 
 .move {
@@ -87,7 +96,7 @@ body, html {
 }
 
 .toToolkit {
-  transition-delay: 10s;
+  /* transition-delay: 10s; */
   /* bottom: 20%;
   left: 50%; */
 }
@@ -112,4 +121,8 @@ body, html {
 
 .modal-img {
   height: 90%;
+}
+
+.ReactModal__Content--after-open {
+  z-index: 1000;
 }
